@@ -88,27 +88,27 @@ namespace OCR
                 {
                     _a = new Dictionary<Point, bool>();
 
-                    _a.Add(new Point(46, 15), true);
-                    _a.Add(new Point(29, 46), true);
-                    _a.Add(new Point(62, 45), true);
-                    _a.Add(new Point(18, 73), true);
-                    _a.Add(new Point(72, 74), true);
-                    _a.Add(new Point(43, 76), true);
-                    _a.Add(new Point(80, 102), true);
-                    _a.Add(new Point(8, 104), true);
+                    _a.Add(new Point(53, 5), true);
+                    _a.Add(new Point(39, 31), true);
+                    _a.Add(new Point(63, 31), true);
+                    _a.Add(new Point(28, 63), true);
+                    _a.Add(new Point(76, 63), true);
+                    _a.Add(new Point(36, 84), true);
+                    _a.Add(new Point(68, 84), true);
+                    _a.Add(new Point(19, 92), true);
+                    _a.Add(new Point(86, 92), true);
+                    _a.Add(new Point(9, 119), true);
+                    _a.Add(new Point(98, 119), true);
 
-                    _a.Add(new Point(15, 17), false);
-                    _a.Add(new Point(73, 18), false);
-                    _a.Add(new Point(46, 38), false);
-                    _a.Add(new Point(8, 54), false);
-                    _a.Add(new Point(80, 54), false);
-                    _a.Add(new Point(39, 62), false);
-                    _a.Add(new Point(53, 63), false);
-                    _a.Add(new Point(27, 90), false);
-                    _a.Add(new Point(59, 91), false);
-                    _a.Add(new Point(45, 99), false);
-                    _a.Add(new Point(26, 106), false);
-                    _a.Add(new Point(63, 104), false);
+                    _a.Add(new Point(15, 3), false);
+                    _a.Add(new Point(87, 3), false);
+                    _a.Add(new Point(53, 38), false);
+                    _a.Add(new Point(43, 70), false);
+                    _a.Add(new Point(63, 70), false);
+                    _a.Add(new Point(32, 101), false);
+                    _a.Add(new Point(72, 101), false);
+                    _a.Add(new Point(26, 123), false);
+                    _a.Add(new Point(79, 123), false);
                 }
                 return _a;
             }
@@ -122,27 +122,27 @@ namespace OCR
                 {
                     _b = new Dictionary<Point, bool>();
 
-                    _b.Add(new Point(29, 8), true);
-                    _b.Add(new Point(55, 11), true);
-                    _b.Add(new Point(8, 14), true);
-                    _b.Add(new Point(62, 33), true);
-                    _b.Add(new Point(7, 47), true);
-                    _b.Add(new Point(33, 49), true);
-                    _b.Add(new Point(59, 54), true);
-                    _b.Add(new Point(6, 77), true);
-                    _b.Add(new Point(65, 88), true);
-                    _b.Add(new Point(6, 100), true);
-                    _b.Add(new Point(44, 102), true);
+                    _b.Add(new Point(9, 6), true);
+                    _b.Add(new Point(9, 36), true);
+                    _b.Add(new Point(9, 75), true);
+                    _b.Add(new Point(9, 115), true);
+                    _b.Add(new Point(54, 5), true);
+                    _b.Add(new Point(80, 15), true);
+                    _b.Add(new Point(82, 41), true);
+                    _b.Add(new Point(25, 59), true);
+                    _b.Add(new Point(53, 60), true);
+                    _b.Add(new Point(84, 66), true);
+                    _b.Add(new Point(92, 86), true);
+                    _b.Add(new Point(77, 110), true);
+                    _b.Add(new Point(54, 120), true);
 
-                    _b.Add(new Point(72, 6), false);
-                    _b.Add(new Point(27, 24), false);
-                    _b.Add(new Point(46, 32), false);
-                    _b.Add(new Point(77, 25), false);
-                    _b.Add(new Point(76, 50), false);
-                    _b.Add(new Point(25, 77), false);
-                    _b.Add(new Point(52, 86), false);
-                    _b.Add(new Point(26, 89), false);
-                    _b.Add(new Point(77, 107), false);
+                    _b.Add(new Point(100, 8), false);
+                    _b.Add(new Point(99, 56), false);
+                    _b.Add(new Point(98, 120), false);
+                    _b.Add(new Point(49, 32), false);
+                    _b.Add(new Point(69, 35), false);
+                    _b.Add(new Point(51, 89), false);
+                    _b.Add(new Point(75, 88), false);
                 }
                 return _b;
             }
@@ -156,27 +156,27 @@ namespace OCR
                 {
                     _c = new Dictionary<Point, bool>();
 
-                    _c.Add(new Point(33, 5), true);
-                    _c.Add(new Point(59, 3), true);
-                    _c.Add(new Point(11, 23), true);
-                    _c.Add(new Point(8, 43), true);
-                    _c.Add(new Point(7, 65), true);
-                    _c.Add(new Point(10, 91), true);
-                    _c.Add(new Point(22, 104), true);
-                    _c.Add(new Point(32, 115), true);
-                    _c.Add(new Point(44, 121), true);
-                    _c.Add(new Point(58, 120), true);
-                    _c.Add(new Point(72, 117), true);
+                    _c.Add(new Point(100, 19), true);
+                    _c.Add(new Point(77, 9), true);
+                    _c.Add(new Point(49, 10), true);
+                    _c.Add(new Point(25, 20), true);
+                    _c.Add(new Point(12, 39), true);
+                    _c.Add(new Point(9, 60), true);
+                    _c.Add(new Point(11, 84), true);
+                    _c.Add(new Point(22, 102), true);
+                    _c.Add(new Point(41, 115), true);
+                    _c.Add(new Point(63, 119), true);
+                    _c.Add(new Point(90, 117), true);
+                    _c.Add(new Point(101, 108), true);
 
-                    _c.Add(new Point(8, 7), false);
-                    _c.Add(new Point(37, 29), false);
-                    _c.Add(new Point(60, 30), false);
-                    _c.Add(new Point(28, 61), false);
-                    _c.Add(new Point(49, 60), false);
-                    _c.Add(new Point(67, 61), false);
-                    _c.Add(new Point(39, 94), false);
-                    _c.Add(new Point(66, 96), false);
-                    _c.Add(new Point(6, 117), false);
+                    _c.Add(new Point(55, 95), false);
+                    _c.Add(new Point(96, 60), false);
+                    _c.Add(new Point(37, 60), false);
+                    _c.Add(new Point(56, 28), false);
+                    _c.Add(new Point(103, 2), false);
+                    _c.Add(new Point(9, 8), false);
+                    _c.Add(new Point(9, 117), false);
+                    _c.Add(new Point(104, 122), false);
                 }
                 return _c;
             }
@@ -190,26 +190,27 @@ namespace OCR
                 {
                     _d = new Dictionary<Point, bool>();
 
-                    _d.Add(new Point(8, 9), true);
-                    _d.Add(new Point(22, 8), true);
-                    _d.Add(new Point(45, 8), true);
-                    _d.Add(new Point(65, 13), true);
-                    _d.Add(new Point(10, 28), true);
-                    _d.Add(new Point(9, 51), true);
-                    _d.Add(new Point(10, 71), true);
-                    _d.Add(new Point(8, 92), true);
-                    _d.Add(new Point(52, 115), true);
-                    _d.Add(new Point(31, 117), true);
-                    _d.Add(new Point(11, 117), true);
+                    _d.Add(new Point(9, 7), true);
+                    _d.Add(new Point(9, 35), true);
+                    _d.Add(new Point(9, 67), true);
+                    _d.Add(new Point(9, 93), true);
+                    _d.Add(new Point(9, 118), true);
+                    _d.Add(new Point(44, 7), true);
+                    _d.Add(new Point(44, 118), true);
+                    _d.Add(new Point(68, 12), true);
+                    _d.Add(new Point(88, 31), true);
+                    _d.Add(new Point(97, 55), true);
+                    _d.Add(new Point(92, 87), true);
+                    _d.Add(new Point(74, 108), true);
 
-                    _d.Add(new Point(97, 8), false);
-                    _d.Add(new Point(22, 22), false);
-                    _d.Add(new Point(44, 25), false);
-                    _d.Add(new Point(87, 58), false);
-                    _d.Add(new Point(63, 64), false);
-                    _d.Add(new Point(42, 100), false);
-                    _d.Add(new Point(22, 102), false);
-                    _d.Add(new Point(97, 111), false);
+                    _d.Add(new Point(84, 4), false);
+                    _d.Add(new Point(99, 15), false);
+                    _d.Add(new Point(101, 101), false);
+                    _d.Add(new Point(86, 119), false);
+                    _d.Add(new Point(50, 33), false);
+                    _d.Add(new Point(33, 60), false);
+                    _d.Add(new Point(70, 60), false);
+                    _d.Add(new Point(49, 93), false);
                 }
                 return _d;
             }
@@ -224,26 +225,26 @@ namespace OCR
                     _e = new Dictionary<Point, bool>();
 
                     _e.Add(new Point(9, 6), true);
-                    _e.Add(new Point(39, 6), true);
-                    _e.Add(new Point(65, 6), true);
-                    _e.Add(new Point(8, 31), true);
-                    _e.Add(new Point(8, 55), true);
-                    _e.Add(new Point(31, 55), true);
-                    _e.Add(new Point(52, 55), true);
-                    _e.Add(new Point(11, 43), true);
-                    _e.Add(new Point(11, 114), true);
-                    _e.Add(new Point(26, 116), true);
-                    _e.Add(new Point(43, 117), true);
-                    _e.Add(new Point(66, 115), true);
+                    _e.Add(new Point(33, 6), true);
+                    _e.Add(new Point(67, 6), true);
+                    _e.Add(new Point(96, 6), true);
+                    _e.Add(new Point(9, 30), true);
+                    _e.Add(new Point(9, 55), true);
+                    _e.Add(new Point(9, 87), true);
+                    _e.Add(new Point(9, 117), true);
+                    _e.Add(new Point(30, 55), true);
+                    _e.Add(new Point(55, 55), true);
+                    _e.Add(new Point(80, 55), true);
+                    _e.Add(new Point(44, 117), true);
+                    _e.Add(new Point(75, 117), true);
+                    _e.Add(new Point(100, 117), true);
 
-                    _e.Add(new Point(27, 28), false);
-                    _e.Add(new Point(63, 25), false);
-                    _e.Add(new Point(61, 39), false);
-                    _e.Add(new Point(28, 38), false);
-                    _e.Add(new Point(23, 68), false);
-                    _e.Add(new Point(62, 68), false);
-                    _e.Add(new Point(24, 100), false);
-                    _e.Add(new Point(66, 100), false);
+                    _e.Add(new Point(61, 31), false);
+                    _e.Add(new Point(98, 26), false);
+                    _e.Add(new Point(98, 46), false);
+                    _e.Add(new Point(98, 70), false);
+                    _e.Add(new Point(98, 98), false);
+                    _e.Add(new Point(61, 86), false);
                 }
                 return _e;
             }
@@ -257,27 +258,27 @@ namespace OCR
                 {
                     _f = new Dictionary<Point, bool>();
 
-                    _f.Add(new Point(1, 0), true);
-                    _f.Add(new Point(69, 0), true);
-                    _f.Add(new Point(15, 14), true);
-                    _f.Add(new Point(69, 14), true);
-                    _f.Add(new Point(15, 50), true);
-                    _f.Add(new Point(15, 64), true);
-                    _f.Add(new Point(1, 123), true);
-                    _f.Add(new Point(15, 123), true);
-                    _f.Add(new Point(48, 62), true);
-                    _f.Add(new Point(48, 64), true);
-                    _f.Add(new Point(59, 64), true);
-
-                    _f.Add(new Point(71, 15), false);
-                    _f.Add(new Point(20, 22), false);
-                    _f.Add(new Point(20, 49), false);
-                    _f.Add(new Point(72, 64), false);
-                    _f.Add(new Point(61, 65), false);
-                    _f.Add(new Point(60, 81), false);
-                    _f.Add(new Point(22, 82), false);
-                    _f.Add(new Point(20, 123), false);
-                    _f.Add(new Point(51, 123), false);
+                    _f.Add(new Point(9, 8), true);
+                    _f.Add(new Point(30, 8), true);
+                    _f.Add(new Point(50, 8), true);
+                    _f.Add(new Point(74, 8), true);
+                    _f.Add(new Point(101, 8), true);
+                    _f.Add(new Point(9, 38), true);
+                    _f.Add(new Point(9, 78), true);
+                    _f.Add(new Point(9, 118), true);
+                    _f.Add(new Point(27, 64), true);
+                    _f.Add(new Point(50, 64), true);
+                    _f.Add(new Point(70, 64), true);
+                    _f.Add(new Point(86, 64), true);
+                    
+                    _f.Add(new Point(39, 25), false);
+                    _f.Add(new Point(101, 25), false);
+                    _f.Add(new Point(39, 43), false);
+                    _f.Add(new Point(101, 60), false);
+                    _f.Add(new Point(36, 88), false);
+                    _f.Add(new Point(36, 118), false);
+                    _f.Add(new Point(100, 88), false);
+                    _f.Add(new Point(100, 118), false);
                 }
                 return _f;
             }
@@ -291,27 +292,27 @@ namespace OCR
                 {
                     _g = new Dictionary<Point, bool>();
 
-                    _g.Add(new Point(66, 6), true);
-                    _g.Add(new Point(49, 5), true);
-                    _g.Add(new Point(14, 27), true);
-                    _g.Add(new Point(4, 59), true);
-                    _g.Add(new Point(8, 85), true);
-                    _g.Add(new Point(29, 117), true);
-                    _g.Add(new Point(48, 121), true);
-                    _g.Add(new Point(80, 79), true);
-                    _g.Add(new Point(80, 70), true);
-                    _g.Add(new Point(65, 69), true);
-                    _g.Add(new Point(65, 79), true);
+                    _g.Add(new Point(93, 12), true);
+                    _g.Add(new Point(67, 5), true);
+                    _g.Add(new Point(36, 11), true);
+                    _g.Add(new Point(19, 27), true);
+                    _g.Add(new Point(11, 50), true);
+                    _g.Add(new Point(11, 81), true);
+                    _g.Add(new Point(25, 102), true);
+                    _g.Add(new Point(52, 116), true);
+                    _g.Add(new Point(77, 116), true);
+                    _g.Add(new Point(96, 103), true);
+                    _g.Add(new Point(96, 88), true);
+                    _g.Add(new Point(96, 72), true);
+                    _g.Add(new Point(82, 72), true);
+                    _g.Add(new Point(64, 72), true);
 
-                    _g.Add(new Point(8, 15), false);
-                    _g.Add(new Point(76, 19), false);
-                    _g.Add(new Point(47, 62), false);
-                    _g.Add(new Point(97, 62), false);
-                    _g.Add(new Point(89, 82), false);
-                    _g.Add(new Point(89, 109), false);
-                    _g.Add(new Point(60, 88), false);
-                    _g.Add(new Point(61, 98), false);
-                    _g.Add(new Point(15, 117), false);
+                    _g.Add(new Point(8, 5), false);
+                    _g.Add(new Point(102, 4), false);
+                    _g.Add(new Point(11, 112), false);
+                    _g.Add(new Point(100, 122), false);
+                    _g.Add(new Point(91, 44), false);
+                    _g.Add(new Point(42, 76), false);
                 }
                 return _g;
             }
