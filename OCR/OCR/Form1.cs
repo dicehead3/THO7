@@ -18,6 +18,8 @@ namespace OCR
 
         private Bitmap inputImage;
 
+        public static string fileName;
+
         public Form1()
         {
             InitializeComponent();
@@ -79,7 +81,7 @@ namespace OCR
         private void OpenPic(object sender, EventArgs e)
         {
             OpenFileDialog oFD = new OpenFileDialog();
-            oFD.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            oFD.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\LetterType\\Verdana set";
             oFD.Filter = "Image Files(*.BMP;*.JPG;*.JPEG;*.PNG;)|*.BMP;*.JPG;*.JPEG;*.PNG;";
             oFD.FilterIndex = 1;
             oFD.RestoreDirectory = true;
@@ -87,6 +89,7 @@ namespace OCR
             {
                 String CurrentFileName = Path.GetFullPath(oFD.FileName);
                 inputImage = new Bitmap(CurrentFileName);
+                fileName = CurrentFileName;
                 pictureBox1.Image = inputImage;
             }
         }

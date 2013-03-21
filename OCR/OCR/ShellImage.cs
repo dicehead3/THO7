@@ -19,7 +19,7 @@ namespace OCR
 
         public ShellImage(Bitmap bmp)
         {
-            Bitmap b = Crop(bmp);
+            Bitmap b = CropAndResize(bmp);
             w = b.Width;
             h = b.Height;
             w3 = w * 3;
@@ -60,14 +60,18 @@ namespace OCR
             return imageData[y * w3 + x];
         }
 
-        private Bitmap Crop(Bitmap b)
+        private Bitmap CropAndResize(Bitmap b)
         {
+            Bitmap res = new Bitmap(161, 182);
+            using (Graphics g = Graphics.FromImage(res))
+                g.DrawImage(b, 0, 0, 161, 182);
+
             int xL = b.Width, yT = b.Height, xR = 0, yB = 0;
 
-            for(int y = 0; y < b.Height; y++)
-                for (int x = 0; x < b.Width; x++)
+            for(int y = 0; y < res.Height; y++)
+                for (int x = 0; x < res.Width; x++)
                 {
-                    Color c = b.GetPixel(x, y);
+                    Color c = res.GetPixel(x, y);
                     if (c.R > 127 && c.G > 127 && c.B > 127) continue;
                     if (x < xL) xL = x;
                     if (x > xR) xR = x;
@@ -76,8 +80,12 @@ namespace OCR
                 }
 
             Rectangle cropRect = new Rectangle(xL, yT, xR - xL, yB - yT);
-            Bitmap cropped = b.Clone(cropRect, b.PixelFormat);
-            return cropped;
+            Bitmap cropped = res.Clone(cropRect, res.PixelFormat);
+            res = new Bitmap(106, 124);
+            using (Graphics g = Graphics.FromImage(res))
+                g.DrawImage(cropped, 0, 0, 106, 124);
+           // res.Save(Form1.fileName + ".cr.bmp", ImageFormat.Bmp);
+            return res;
         }
     }
 }

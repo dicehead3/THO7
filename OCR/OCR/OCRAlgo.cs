@@ -24,26 +24,46 @@ namespace OCR
             for (int i = 0; i < 36; i++)
                 percentages[i] = 0;
 
-            for(int y = 0; y < si.Height; y++)
+            bool containsLightPixels = false;
+            for (int y = 0; y < si.Height; y++)
                 for (int x = 0; x < si.WidthX3 - 2; x += 3)
                 {
-                    for (int i = 0; i < 36; i++)
+                    if (si.Get(x, y) > 150 && si.Get(x + 1, y) > 150 && si.Get(x + 2, y) > 150)
                     {
-                        if (CharData.Data.Characters[i].ContainsKey(new Point(x / 3, y)))
+                        containsLightPixels = true;
+                        break;
+                    }
+                }
+
+            if (!containsLightPixels && si.Height > si.Width)
+                percentages[8] = 100;
+            else
+            {
+                for (int y = 0; y < si.Height; y++)
+                {
+                    for (int x = 0; x < si.WidthX3 - 2; x += 3)
+                    {
+                        for (int i = 0; i < 36; i++)
                         {
-                            bool b = CharData.Data.Characters[i][new Point(x / 3, y)];
-                            byte rgbVal = si.Get(x, y);
-                            if (rgbVal > 127 && b == false)
+
+
+                            if (CharData.Data.Characters[i].ContainsKey(new Point(x / 3, y)))
                             {
-                                percentages[i] += 5;
-                            }
-                            else if (rgbVal <= 127 && b == true)
-                            {
-                                percentages[i] += 5;
+                                bool b = CharData.Data.Characters[i][new Point(x / 3, y)];
+                                byte rgbVal = si.Get(x, y);
+                                if (rgbVal > 127 && b == false)
+                                {
+                                    percentages[i] += 5;
+                                }
+                                else if (rgbVal <= 127 && b == true)
+                                {
+                                    percentages[i] += 5;
+                                }
                             }
                         }
                     }
                 }
+            }
             int j = 0;
             dic.Add("A", percentages[j]); j++;
             dic.Add("B", percentages[j]); j++;
