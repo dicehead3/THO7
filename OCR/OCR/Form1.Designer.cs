@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -103,10 +104,10 @@
             this.l8 = new System.Windows.Forms.Label();
             this.l9 = new System.Windows.Forms.Label();
             this.l0 = new System.Windows.Forms.Label();
-            this.cbAlgo = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
             this.lMLC = new System.Windows.Forms.Label();
+            this.cbAlgo = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -133,6 +134,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 33);
             this.pictureBox1.Name = "pictureBox1";
@@ -959,25 +962,6 @@
             this.l0.TabIndex = 71;
             this.l0.Text = "label37";
             // 
-            // cbAlgo
-            // 
-            this.cbAlgo.FormattingEnabled = true;
-            this.cbAlgo.Location = new System.Drawing.Point(3, 3);
-            this.cbAlgo.Name = "cbAlgo";
-            this.cbAlgo.Size = new System.Drawing.Size(340, 21);
-            this.cbAlgo.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(359, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(341, 24);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label37
             // 
             this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -1001,6 +985,25 @@
             this.lMLC.Size = new System.Drawing.Size(125, 24);
             this.lMLC.TabIndex = 73;
             this.lMLC.Text = "label38";
+            // 
+            // cbAlgo
+            // 
+            this.cbAlgo.FormattingEnabled = true;
+            this.cbAlgo.Location = new System.Drawing.Point(3, 3);
+            this.cbAlgo.Name = "cbAlgo";
+            this.cbAlgo.Size = new System.Drawing.Size(340, 21);
+            this.cbAlgo.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Location = new System.Drawing.Point(359, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(341, 24);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 

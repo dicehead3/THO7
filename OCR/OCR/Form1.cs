@@ -91,6 +91,7 @@ namespace OCR
                 inputImage = new Bitmap(CurrentFileName);
                 fileName = CurrentFileName;
                 pictureBox1.Image = inputImage;
+                pictureBox1.BackgroundImage = null;
             }
         }
 
